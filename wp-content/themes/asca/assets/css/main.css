@@ -1,0 +1,1730 @@
+html {
+  height: 100%;
+  font-size: 21px;
+}
+html * {
+  font-family: "Montserrat", sans-serif;
+}
+html body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html body header .nav-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4.5rem 1.5rem 4.5rem;
+}
+html body header .nav-bar .menu-ligne {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body header .nav-bar .menu-ligne .logo {
+  width: 178px;
+  z-index: 10;
+}
+html body header .nav-bar .menu-ligne .logo a img {
+  width: 100%;
+}
+html body header .nav-bar .menu-ligne .bars {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+}
+html body header .nav-bar .menu-ligne .bars .bar {
+  height: 20%;
+  background-color: #004e97;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+html body header .nav-bar .menu-ligne .bars .bar:nth-child(1) {
+  width: 50%;
+}
+html body header .nav-bar .menu-ligne .bars .bar:nth-child(2) {
+  width: 100%;
+}
+html body header .nav-bar .menu-ligne .bars .bar:nth-child(3) {
+  width: 50%;
+  align-self: flex-end;
+}
+html body header .nav-bar .menu-ligne .bars.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(40%, 50%);
+  color: #004e97;
+}
+html body header .nav-bar .menu-ligne .bars.open .bar:nth-child(2) {
+  transform: rotate(-45deg);
+  color: #004e97;
+}
+html body header .nav-bar .menu-ligne .bars.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-40%, -50%);
+  color: #004e97;
+}
+html body header .menu-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  right: 0%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: width 0.5s, height 0.5s;
+  border-radius: 30px;
+  opacity: 0.95;
+  z-index: 9;
+  overflow: hidden;
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(1.1em);
+}
+html body header .menu-div.open {
+  width: 95%;
+  height: 93%;
+  top: 5%;
+  right: 2.5%;
+}
+html body header .menu-div .menu-nav {
+  margin-top: 7%;
+  display: flex;
+}
+html body header .menu-div .menu-nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body header .menu-div .menu-nav ul .nav-item a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 500;
+}
+html body header .menu-div .email-list ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  font-weight: 500;
+}
+html body footer {
+  margin-top: auto;
+}
+html body footer .footer-section {
+  padding-top: 100px;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+html body footer .footer-section div p {
+  color: #818285;
+  font-weight: 500;
+}
+html body footer .footer-section div .list-of-menu {
+  display: flex;
+  justify-content: space-around;
+}
+html body footer .footer-section div .list-of-menu .menu-item {
+  list-style-type: none;
+  padding-top: 20px;
+}
+html body footer .footer-section div .list-of-menu .menu-item a {
+  text-decoration: none;
+  color: #818285;
+  display: block;
+}
+html body footer .footer-section div .list-of-menu .menu-item .sub-menu {
+  padding: 0;
+  margin: 0;
+}
+html body footer .footer-section div .list-of-menu .menu-item .menu-item-has-children > a {
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: #333333;
+}
+html body.home .section1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+html body.home .section1 .first-section {
+  display: flex;
+  flex-direction: column;
+}
+html body.home .section1 .first-section .first-section-first-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem 4.5rem;
+}
+html body.home .section1 .first-section .first-section-first-part .text-part {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  justify-content: center;
+}
+html body.home .section1 .first-section .first-section-first-part .text-part h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333333;
+}
+html body.home .section1 .first-section .first-section-first-part .text-part p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: gray;
+}
+html body.home .section1 .first-section .first-section-first-part .group-imgs {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+html body.home .section1 .first-section .first-section-first-part .group-imgs div {
+  width: 30%;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+html body.home .section1 .first-section .first-section-first-part .group-imgs img {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+html body.home .section1 .first-section .first-section-first-part .group-imgs img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+}
+html body.home .section1 .first-section .first-section-second-part {
+  border-top: grey 1px solid;
+  border-bottom: grey 1px solid;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  transform: translateY(-130px);
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content {
+  padding: 1.5rem 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .first-section-second-part-par {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a {
+  text-decoration: none;
+  color: #333333;
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a img {
+  border-radius: 5px;
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information ins {
+  margin: 0rem 5rem 0rem 2rem;
+}
+html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information .email {
+  margin-left: 5rem;
+}
+html body.home .second-section .second-section-first-part {
+  padding: 1rem 4.5rem;
+}
+html body.home .second-section .second-section-first-part div h1 {
+  color: #333333;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+html body.home .second-section .second-section-first-part div .second-section-first-paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333333;
+  padding-bottom: 1rem;
+}
+html body.home .second-section .second-section-first-part div .second-section-first-paragraph p strong {
+  font-weight: 500;
+  color: gray;
+}
+html body.home .second-section .second-section-first-part div .second-section-second-paragraph {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+}
+html body.home .second-section .second-section-second-part {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+  width: 100%;
+  z-index: 9;
+  width: 100%;
+  transform: translateY(100px);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  justify-content: space-around;
+  position: relative;
+}
+html body.home .second-section .second-section-second-part .background-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+html body.home .second-section .second-section-second-part h1 {
+  font-size: 2.5rem;
+  width: 55.4rem;
+  color: black;
+}
+html body.home .second-section .second-section-second-part div .second-section-button {
+  padding: 23px 100px;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: #004e97;
+  border-color: #004e97;
+}
+html body.home .second-section .second-section-second-part div .second-section-button:hover {
+  background-color: #004e97;
+  color: white;
+}
+html body.home .third-section {
+  padding: 9rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+}
+html body.home .third-section .third-section-first-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body.home .third-section .third-section-first-part .third-section-first-button span {
+  border: #004e97 solid 2px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #004e97;
+  padding: 10px 15px;
+}
+html body.home .third-section .third-section-first-part .third-section-paragraph {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333333;
+}
+html body.home .third-section .third-section-first-part .third-section-paragraph p strong {
+  font-weight: 600;
+  color: #004e97;
+}
+html body.home .third-section .third-section-first-part .slider-button {
+  align-self: end;
+}
+html body.home .third-section .third-section-first-part .slider-button .third-section-vertical-button button {
+  border-radius: 10px;
+  height: max-content;
+  border: #818285 solid 2px;
+  color: #818285;
+  font-size: 0.2rem;
+  font-weight: 600;
+}
+html body.home .third-section .third-section-first-part .slider-button .third-section-vertical-button button:hover {
+  background-color: #818285;
+  color: white;
+}
+html body.home .third-section .swiper {
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+html body.home .third-section .swiper .swiper-slide img {
+  position: relative;
+}
+html body.home .third-section .swiper .swiper-slide .number {
+  position: absolute;
+  top: 8.3%;
+  left: 3.6%;
+  color: #004e97;
+  font-weight: 600;
+}
+html body.home .third-section .swiper .swiper-slide .title {
+  position: absolute;
+  top: 18%;
+  left: 3.6%;
+  color: #004e97;
+  font-weight: 600;
+}
+html body.home .third-section .swiper .swiper-slide button {
+  position: absolute;
+  background-color: transparent;
+  padding: 10px 100px;
+  top: 200px;
+  right: 0;
+  transform: translate(45%, 47%) rotate(270deg);
+  color: #004e97;
+  border-color: #004e97;
+  border-radius: 15px;
+  font-weight: 600;
+}
+html body.home .third-section .swiper .swiper-slide button:hover {
+  background-color: #004e97;
+  color: white;
+}
+html body.home .fourth-section {
+  margin: auto;
+  text-align: center;
+}
+html body.home .fourth-section h2 {
+  color: #333333;
+  font-weight: 600;
+}
+html body.home .fourth-section p {
+  color: #818285;
+  font-weight: 600;
+}
+html body.home .fourth-section button {
+  color: #004e97;
+  font-weight: 600;
+  border-color: #004e97;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 13px 60px;
+}
+html body.home .fourth-section button:hover {
+  background-color: #004e97;
+  color: white;
+}
+html body.page-template-template-categories {
+  background-color: Whitesmoke;
+}
+html body.page-template-template-categories section {
+  padding-left: 0;
+  padding-right: 0;
+}
+html body.page-template-template-categories section .products-section {
+  padding: 1.5rem 3.7rem;
+}
+html body.page-template-template-categories section .products-section .category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+html body.page-template-template-categories section .products-section .category-buttons .category-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #004e97;
+  text-decoration: none;
+  border-radius: 15px;
+  border: #004e97 solid 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+html body.page-template-template-categories section .products-section .category-buttons .category-button:hover, html body.page-template-template-categories section .products-section .category-buttons .category-button.active {
+  background-color: #004e97;
+  color: white;
+}
+html body.page-template-template-categories section .products-section .product-container {
+  padding-top: 100px;
+  justify-content: space-between;
+}
+html body.page-template-template-categories section .products-section .product-container .product-item {
+  padding-bottom: 100px;
+  width: 30%;
+}
+html body.page-template-template-categories section .products-section .product-container .product-item .card {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+}
+html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body {
+  width: 90%;
+  padding: 30px 0;
+  margin: auto;
+}
+html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h4 {
+  color: #818285;
+  font-size: 1rem;
+}
+html body.products-template-default .single-product-page {
+  padding: 1.5rem 4.5rem;
+}
+html body.products-template-default .single-product-page section .breadcrumb {
+  color: #818285;
+}
+html body.products-template-default .single-product-page section .breadcrumb a {
+  text-decoration: none;
+  color: #818285;
+  font-weight: 600;
+  font-size: 1rem;
+}
+html body.products-template-default .single-product-page .product-detail {
+  padding-top: 30px;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part swiper-container {
+  width: 100%;
+  height: 100%;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part swiper-container {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part .mySwiper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part .mySwiper2 {
+  box-sizing: border-box;
+  padding: 15px 15px;
+  position: absolute;
+  z-index: 5;
+  width: 90px !important;
+  transform: translateY(-170%);
+  background-color: white;
+  border-radius: 0px 15px 15px 0px;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part .mySwiper2 swiper-slide {
+  height: 25%;
+  height: 100%;
+  opacity: 0.4;
+  border: 1px solid #818285;
+  border-radius: 15px;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part .mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .swiper-part swiper-slide img {
+  display: block;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .text-part {
+  margin: auto;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .text-part .product-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .text-part .product-category {
+  padding-bottom: 30px;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .text-part .product-category .highlight {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #818285;
+}
+html body.products-template-default .single-product-page .product-detail .product-info .text-part .product-content {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #818285;
+}
+html body.page-template-template-about .section1 {
+  padding: 1.5rem 4.5rem;
+}
+html body.page-template-template-about .section1 .section1-content .section1-content-first-part {
+  text-align: center;
+  color: #333333;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+html body.page-template-template-about .section1 .section1-content .section1-content-second-part {
+  display: flex;
+  justify-content: space-between;
+}
+html body.page-template-template-about .section1 .section1-content .section1-content-second-part .left-part {
+  width: 45%;
+}
+html body.page-template-template-about .section1 .section1-content .section1-content-second-part .left-part img {
+  width: 100%;
+}
+html body.page-template-template-about .section1 .section1-content .section1-content-second-part .right-part {
+  width: 45%;
+  display: block;
+}
+html body.page-template-template-about .section1 .section1-content .section1-content-second-part .right-part img {
+  width: 100%;
+  padding-bottom: 50px;
+}
+html body.page-template-template-about .section1 .section1-content .section1-content-second-part .right-part p {
+  color: #333333;
+  font-weight: 600;
+  font-size: 2rem;
+}
+html body.page-template-template-about .section2 {
+  padding: 1.5rem 4.5rem;
+}
+html body.page-template-template-about .section2 .second-section-title h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #333333;
+  padding-bottom: 50px;
+}
+html body.page-template-template-about .section2 .paragraphs-part .paragraph p {
+  color: #333333;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+html body.page-template-template-about .section3 .back-img {
+  padding: 1.5rem 4.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html body.page-template-template-about .section3 .back-img div h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #333333;
+  padding-top: 170px;
+  padding-bottom: 50px;
+}
+html body.page-template-template-about .section3 .back-img .cards {
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+html body.page-template-template-about .section3 .back-img .cards div {
+  width: 30%;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+html body.page-template-template-about .section3 .back-img .cards div p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333333;
+  padding: 15px 20px;
+}
+html body.page-template-template-about .section4 .fourth-section {
+  margin: auto;
+  text-align: center;
+}
+html body.page-template-template-about .section4 .fourth-section h1 {
+  padding-top: 100px;
+}
+html body.page-template-template-about .section4 .fourth-section h1 p {
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+html body.page-template-template-about .section4 .fourth-section p {
+  color: #818285;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 15px 20%;
+  text-align: center;
+}
+html body.page-template-template-about .section4 .fourth-section button {
+  color: #004e97;
+  font-weight: 600;
+  border-color: #004e97;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 13px 60px;
+}
+html body.page-template-template-about .section4 .fourth-section button:hover {
+  background-color: #004e97;
+  color: white;
+}
+html body.page-template-template-contact section {
+  padding: 1.5rem 4.5rem;
+}
+html body.page-template-template-contact section div .text-part {
+  text-align: center;
+  padding-bottom: 70px;
+}
+html body.page-template-template-contact section div .text-part div h1 p {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333333;
+}
+html body.page-template-template-contact section div .text-part div p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #818285;
+}
+html body.page-template-template-contact section div .contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+html body.page-template-template-contact section div .contact-form .form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 7px;
+}
+html body.page-template-template-contact section div .contact-form .form input {
+  border-radius: 10px;
+  border: 2px solid #acacae;
+}
+html body.page-template-template-contact section div .contact-form .form .fist-name-input {
+  width: 450px;
+  height: 50px;
+}
+html body.page-template-template-contact section div .contact-form .form .last-name-input {
+  width: 450px;
+  height: 50px;
+}
+html body.page-template-template-contact section div .contact-form .form .custum-input {
+  width: 950px;
+  height: 50px;
+}
+html body.page-template-template-contact section div .contact-form .form textarea {
+  width: 950px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid #acacae;
+}
+html body.page-template-template-contact section div .contact-form .form .custom-submit {
+  width: 950px;
+  height: 50px;
+  background-color: #004e97;
+  color: white;
+  border: none;
+}
+html body.page-template-template-contact section div .contact-form .chat-part a {
+  color: #333333;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+html body.page-template-template-contact section div .contact-form .chat-part div {
+  padding-bottom: 50px;
+}
+html body.page-template-template-contact section div .contact-form .chat-part div h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333333;
+}
+html body.page-template-template-contact section div .contact-form .chat-part div p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #818285;
+}
+html body.page-template-template-contact section div .contact-form .chat-part div ul {
+  padding-left: 0;
+}
+html body.page-template-template-contact section div .contact-form .chat-part div ul li {
+  list-style-type: none;
+}
+html body.page-template-template-contact section div .contact-form .chat-part div img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 21px;
+  }
+  html body header .nav-bar {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  html body header .nav-bar .menu-ligne .logo {
+    width: 160px;
+  }
+  html body header .nav-bar .menu-ligne .bars {
+    width: 45px;
+    height: 45px;
+  }
+  html body header .menu-div {
+    display: block;
+  }
+  html body header .menu-div .menu-nav {
+    margin-top: 15%;
+  }
+  html body header .menu-div .menu-nav ul .nav-item a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  html body header .menu-div .email-list ul {
+    padding-left: 0;
+    flex-direction: column;
+  }
+  html body header .menu-div .email-list ul li ins p {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  html body footer {
+    margin-top: auto;
+  }
+  html body footer .footer-section {
+    padding-top: 100px;
+    display: block;
+  }
+  html body footer .footer-section div div a img {
+    width: 120px;
+  }
+  html body footer .footer-section div p {
+    font-size: 0.9rem;
+  }
+  html body footer .footer-section div {
+    font-size: 0.9rem;
+  }
+  html body footer .footer-section div .list-of-menu {
+    padding-left: 0;
+    display: flex;
+  }
+  html body.home .section1 .first-section .first-section-first-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part {
+    width: 50%;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part h1 {
+    font-size: 2rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part p {
+    font-size: 1.5rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .group-imgs {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part {
+    transform: translateY(-55px);
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content {
+    padding: 1.5rem 2rem;
+    display: flex;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .first-section-second-part-par {
+    font-size: 1rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information {
+    font-size: 0.9rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a {
+    width: 65px;
+    height: 50px;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a img {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information ins {
+    margin: 0rem 2rem 0rem 2rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information .email {
+    margin-left: 2rem;
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .planet img {
+    width: 100%;
+  }
+  html body.home section {
+    padding-bottom: 10px;
+  }
+  html body.home section .second-section {
+    padding: 0;
+  }
+  html body.home section .second-section div h1 {
+    font-size: 1.27rem;
+  }
+  html body.home section .second-section div .second-section-first-paragraph {
+    font-size: 1rem;
+  }
+  html body.home section .second-section div .second-section-second-paragraph {
+    font-size: 0.8rem;
+  }
+  html body.home section .second-section .second-section-second-part {
+    padding: 0;
+    display: block;
+    transform: translateY(40px);
+  }
+  html body.home section .second-section .second-section-second-part .background-div {
+    width: 55%;
+    height: 50%;
+  }
+  html body.home section .second-section .second-section-second-part h1 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  html body.home section .second-section .second-section-second-part div {
+    text-align: center;
+  }
+  html body.home section .second-section .second-section-second-part div .second-section-button {
+    padding: 10px 60px;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+  html body.home .third-section {
+    padding-left: 0;
+    padding-top: 90px;
+    display: block;
+  }
+  html body.home .third-section .third-section-first-part {
+    display: block;
+  }
+  html body.home .third-section .third-section-first-part .third-section-first-button span {
+    border-radius: 15px;
+    font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+  html body.home .third-section .third-section-first-part .third-section-paragraph {
+    font-size: 1rem;
+  }
+  html body.home .third-section .third-section-first-part .slider-button {
+    align-self: end;
+  }
+  html body.home .third-section .third-section-first-part .slider-button .third-section-vertical-button button {
+    border-radius: 10px;
+    height: max-content;
+    border: #818285 solid 2px;
+    color: #818285;
+    font-size: 0.2rem;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+  }
+  html body.home .third-section .swiper .swiper-slide img {
+    position: relative;
+  }
+  html body.home .third-section .swiper .swiper-slide .number {
+    position: absolute;
+    top: 8.3%;
+    left: 3.6%;
+    color: #004e97;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide .title {
+    position: absolute;
+    top: 18%;
+    left: 3.6%;
+    color: #004e97;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide button {
+    position: absolute;
+    background-color: transparent;
+    padding: 10px 100px;
+    top: 200px;
+    right: 0;
+    transform: translate(45%, 47%) rotate(270deg);
+    color: #004e97;
+    border-color: #004e97;
+    border-radius: 15px;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide button:hover {
+    background-color: #004e97;
+    color: white;
+  }
+  html body.home .section5 {
+    padding-bottom: 50px;
+  }
+  html body.home .section5 .fourth-section h2 {
+    font-size: 1.27rem;
+  }
+  html body.home .section5 .fourth-section p {
+    font-size: 0.8rem;
+  }
+  html body.home .section5 .fourth-section button {
+    color: #004e97;
+    font-weight: 600;
+    border-color: #004e97;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 10px 60px;
+  }
+  html body.page-template-template-categories section .products-section {
+    padding: 1rem 1rem;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons .category-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #004e97;
+    text-decoration: none;
+    border-radius: 15px;
+    border: #004e97 solid 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons .category-button:hover, html body.page-template-template-categories section .products-section .category-buttons .category-button.active {
+    background-color: #004e97;
+    color: white;
+  }
+  html body.page-template-template-categories section .products-section .product-container {
+    padding-top: 100px;
+    justify-content: space-between;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item {
+    padding-bottom: 100px;
+    width: 30%;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body {
+    width: 90%;
+    padding: 30px 0;
+    margin: auto;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h4 {
+    color: #818285;
+    font-size: 1rem;
+  }
+  html body.products-template-default .single-product-page {
+    padding: 1.5rem 4.5rem;
+  }
+  html body.products-template-default .single-product-page section .breadcrumb {
+    color: #818285;
+  }
+  html body.products-template-default .single-product-page section .breadcrumb a {
+    text-decoration: none;
+    color: #818285;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  html body.products-template-default .single-product-page .product-detail {
+    /* Style for vertical pagination thumbnails */
+    /* Style for vertical pagination */
+    /* Vertical alignment */
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper {
+    width: 100%;
+    height: 300px;
+    /* Adjust as needed */
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages {
+    height: 80px;
+    /* Adjust height for thumbnails */
+    overflow: hidden;
+    /* Hide overflow if needed */
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages .swiper-slide {
+    width: 80px;
+    /* Width of the thumbnail */
+    height: auto;
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper-container {
+    display: flex;
+    flex-direction: column;
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper-container-vertical {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  html body.products-template-default .single-product-page .product-detail .product-category {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  html body.products-template-default .single-product-page .product-detail .product-category .highlight {
+    background-color: #ffeb3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 21px;
+  }
+  html body header .nav-bar {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+  html body header .nav-bar .menu-ligne .logo {
+    width: 120px;
+  }
+  html body header .nav-bar .menu-ligne .bars {
+    width: 35px;
+    height: 35px;
+  }
+  html body header .menu-div {
+    display: block;
+  }
+  html body header .menu-div .menu-nav {
+    margin-top: 15%;
+  }
+  html body header .menu-div .menu-nav ul .nav-item a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  html body header .menu-div .email-list ul {
+    padding-left: 0;
+    flex-direction: column;
+  }
+  html body header .menu-div .email-list ul li ins p {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  html body footer {
+    margin-top: auto;
+  }
+  html body footer .footer-section {
+    padding-top: 100px;
+    display: block;
+  }
+  html body footer .footer-section div div a img {
+    width: 120px;
+  }
+  html body footer .footer-section div p {
+    font-size: 0.9rem;
+  }
+  html body footer .footer-section div {
+    font-size: 0.9rem;
+  }
+  html body footer .footer-section div .list-of-menu {
+    padding-left: 0;
+    display: flex;
+  }
+  html body.home .section1 .first-section .first-section-first-part {
+    display: block;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part h1 {
+    font-size: 1.3rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part p {
+    font-size: 1rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .group-imgs {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part {
+    transform: translateY(-55px);
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content {
+    padding: 1.5rem 1.5rem;
+    display: block;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .first-section-second-part-par {
+    font-size: 1rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information {
+    font-size: 0.9rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a {
+    width: 65px;
+    height: 50px;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a img {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information ins {
+    margin: 0rem 1.5rem 0rem 1.5rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information .email {
+    margin-left: 1.5rem;
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .planet {
+    width: 250px;
+    height: 170px;
+    margin: auto;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .planet img {
+    width: 100%;
+  }
+  html body.home section {
+    padding-bottom: 10px;
+  }
+  html body.home section .second-section {
+    padding: 0;
+  }
+  html body.home section .second-section div h1 {
+    font-size: 1.27rem;
+  }
+  html body.home section .second-section div .second-section-first-paragraph {
+    font-size: 1rem;
+  }
+  html body.home section .second-section div .second-section-second-paragraph {
+    font-size: 0.8rem;
+  }
+  html body.home section .second-section .second-section-second-part {
+    padding: 0;
+    display: block;
+    transform: translateY(40px);
+  }
+  html body.home section .second-section .second-section-second-part .background-div {
+    width: 55%;
+    height: 50%;
+  }
+  html body.home section .second-section .second-section-second-part h1 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  html body.home section .second-section .second-section-second-part div {
+    text-align: center;
+  }
+  html body.home section .second-section .second-section-second-part div .second-section-button {
+    padding: 10px 60px;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+  html body.home .third-section {
+    padding-left: 0;
+    padding-top: 90px;
+    display: block;
+  }
+  html body.home .third-section .third-section-first-part {
+    display: block;
+  }
+  html body.home .third-section .third-section-first-part .third-section-first-button span {
+    border-radius: 15px;
+    font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+  html body.home .third-section .third-section-first-part .third-section-paragraph {
+    font-size: 1rem;
+  }
+  html body.home .third-section .third-section-first-part .slider-button {
+    align-self: end;
+  }
+  html body.home .third-section .third-section-first-part .slider-button .third-section-vertical-button button {
+    border-radius: 10px;
+    height: max-content;
+    border: #818285 solid 2px;
+    color: #818285;
+    font-size: 0.2rem;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+  }
+  html body.home .third-section .swiper .swiper-slide img {
+    position: relative;
+  }
+  html body.home .third-section .swiper .swiper-slide .number {
+    position: absolute;
+    top: 8.3%;
+    left: 3.6%;
+    color: #004e97;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide .title {
+    position: absolute;
+    top: 18%;
+    left: 3.6%;
+    color: #004e97;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide button {
+    position: absolute;
+    background-color: transparent;
+    padding: 10px 100px;
+    top: 200px;
+    right: 0;
+    transform: translate(45%, 47%) rotate(270deg);
+    color: #004e97;
+    border-color: #004e97;
+    border-radius: 15px;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide button:hover {
+    background-color: #004e97;
+    color: white;
+  }
+  html body.home .section5 {
+    padding-bottom: 50px;
+  }
+  html body.home .section5 .fourth-section h2 {
+    font-size: 1.27rem;
+  }
+  html body.home .section5 .fourth-section p {
+    font-size: 0.8rem;
+  }
+  html body.home .section5 .fourth-section button {
+    color: #004e97;
+    font-weight: 600;
+    border-color: #004e97;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 10px 60px;
+  }
+  html body.page-template-template-categories section .products-section {
+    padding: 1rem 1rem;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons .category-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #004e97;
+    text-decoration: none;
+    border-radius: 15px;
+    border: #004e97 solid 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons .category-button:hover, html body.page-template-template-categories section .products-section .category-buttons .category-button.active {
+    background-color: #004e97;
+    color: white;
+  }
+  html body.page-template-template-categories section .products-section .product-container {
+    padding-top: 100px;
+    justify-content: space-between;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item {
+    padding-bottom: 100px;
+    width: 30%;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body {
+    width: 90%;
+    padding: 30px 0;
+    margin: auto;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h4 {
+    color: #818285;
+    font-size: 1rem;
+  }
+  html body.products-template-default .single-product-page {
+    padding: 1.5rem 4.5rem;
+  }
+  html body.products-template-default .single-product-page section .breadcrumb {
+    color: #818285;
+  }
+  html body.products-template-default .single-product-page section .breadcrumb a {
+    text-decoration: none;
+    color: #818285;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  html body.products-template-default .single-product-page .product-detail {
+    /* Style for vertical pagination thumbnails */
+    /* Style for vertical pagination */
+    /* Vertical alignment */
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper {
+    width: 100%;
+    height: 300px;
+    /* Adjust as needed */
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages {
+    height: 80px;
+    /* Adjust height for thumbnails */
+    overflow: hidden;
+    /* Hide overflow if needed */
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages .swiper-slide {
+    width: 80px;
+    /* Width of the thumbnail */
+    height: auto;
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper-container {
+    display: flex;
+    flex-direction: column;
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper-container-vertical {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  html body.products-template-default .single-product-page .product-detail .product-category {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  html body.products-template-default .single-product-page .product-detail .product-category .highlight {
+    background-color: #ffeb3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 21px;
+  }
+  html body header .nav-bar {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  html body header .nav-bar .menu-ligne .logo {
+    width: 120px;
+  }
+  html body header .nav-bar .menu-ligne .bars {
+    width: 30px;
+    height: 30px;
+  }
+  html body header .menu-div.open {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    bottom: 2.5%;
+    right: 2.5%;
+  }
+  html body header .menu-div .menu-nav {
+    margin-top: 20%;
+  }
+  html body header .menu-div .menu-nav ul {
+    padding-left: 0;
+  }
+  html body header .menu-div .menu-nav ul .nav-item a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  html body header .menu-div .email-list ul {
+    padding-left: 0;
+    flex-direction: column;
+  }
+  html body header .menu-div .email-list ul li ins p {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  html body footer {
+    margin-top: auto;
+  }
+  html body footer .footer-section {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  html body footer .footer-section div div a img {
+    width: 120px;
+  }
+  html body footer .footer-section div p {
+    font-size: 0.9rem;
+  }
+  html body footer .footer-section div .list-of-menu {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-left: 0;
+    display: block;
+  }
+  html body.home .section1 .first-section .first-section-first-part {
+    display: block;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part h1 {
+    font-size: 1.3rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .text-part p {
+    font-size: 1rem;
+  }
+  html body.home .section1 .first-section .first-section-first-part .group-imgs {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part {
+    transform: translateY(-55px);
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content {
+    padding: 1rem 1rem;
+    display: block;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .first-section-second-part-par {
+    font-size: 0.9rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information {
+    font-size: 0.7rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a {
+    width: 65px;
+    height: 50px;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information a img {
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information ins {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .first-section-second-part-text .information .email {
+    margin-left: 1rem;
+    width: 100%;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .planet {
+    width: 250px;
+    height: 170px;
+    margin: auto;
+  }
+  html body.home .section1 .first-section .first-section-second-part .first-section-second-part-content .planet img {
+    width: 100%;
+  }
+  html body.home section {
+    padding-bottom: 10px;
+  }
+  html body.home section .second-section {
+    padding: 0;
+  }
+  html body.home section .second-section div h1 {
+    font-size: 1.27rem;
+  }
+  html body.home section .second-section div .second-section-first-paragraph {
+    font-size: 1rem;
+  }
+  html body.home section .second-section div .second-section-second-paragraph {
+    font-size: 0.8rem;
+  }
+  html body.home section .second-section .second-section-second-part {
+    padding: 0;
+    display: block;
+    transform: translateY(40px);
+  }
+  html body.home section .second-section .second-section-second-part .background-div {
+    width: 55%;
+    height: 50%;
+  }
+  html body.home section .second-section .second-section-second-part h1 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  html body.home section .second-section .second-section-second-part div {
+    text-align: center;
+  }
+  html body.home section .second-section .second-section-second-part div .second-section-button {
+    padding: 10px 60px;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+  html body.home .third-section {
+    padding-left: 0;
+    padding-top: 90px;
+    display: block;
+  }
+  html body.home .third-section .third-section-first-part {
+    display: block;
+  }
+  html body.home .third-section .third-section-first-part .third-section-first-button span {
+    border-radius: 15px;
+    font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+  html body.home .third-section .third-section-first-part .third-section-paragraph {
+    font-size: 1rem;
+  }
+  html body.home .third-section .third-section-first-part .slider-button {
+    align-self: end;
+  }
+  html body.home .third-section .third-section-first-part .slider-button .third-section-vertical-button button {
+    border-radius: 10px;
+    height: max-content;
+    border: #818285 solid 2px;
+    color: #818285;
+    font-size: 0.2rem;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+  }
+  html body.home .third-section .swiper .swiper-slide img {
+    position: relative;
+  }
+  html body.home .third-section .swiper .swiper-slide .number {
+    position: absolute;
+    top: 8.3%;
+    left: 3.6%;
+    color: #004e97;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide .title {
+    position: absolute;
+    top: 18%;
+    left: 3.6%;
+    color: #004e97;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide button {
+    position: absolute;
+    background-color: transparent;
+    padding: 10px 100px;
+    top: 200px;
+    right: 0;
+    transform: translate(45%, 47%) rotate(270deg);
+    color: #004e97;
+    border-color: #004e97;
+    border-radius: 15px;
+    font-weight: 600;
+  }
+  html body.home .third-section .swiper .swiper-slide button:hover {
+    background-color: #004e97;
+    color: white;
+  }
+  html body.home .section5 {
+    padding-bottom: 50px;
+  }
+  html body.home .section5 .fourth-section h2 {
+    font-size: 1.27rem;
+  }
+  html body.home .section5 .fourth-section p {
+    font-size: 0.8rem;
+  }
+  html body.home .section5 .fourth-section button {
+    color: #004e97;
+    font-weight: 600;
+    border-color: #004e97;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 10px 60px;
+  }
+  html body.page-template-template-categories section .products-section {
+    padding: 1rem 1rem;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons {
+    justify-content: center;
+  }
+  html body.page-template-template-categories section .products-section .category-buttons .category-button {
+    padding: 10px 15px;
+  }
+  html body.page-template-template-categories section .products-section .product-container {
+    padding-top: 50px;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h2 {
+    font-size: 1rem;
+    font-weight: 650;
+  }
+  html body.page-template-template-categories section .products-section .product-container .product-item .card .card-body h4 {
+    color: #818285;
+    font-size: 0.8rem;
+  }
+  html body.products-template-default .single-product-page {
+    padding: 1.5rem 4.5rem;
+  }
+  html body.products-template-default .single-product-page section .breadcrumb {
+    color: #818285;
+  }
+  html body.products-template-default .single-product-page section .breadcrumb a {
+    text-decoration: none;
+    color: #818285;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  html body.products-template-default .single-product-page .product-detail {
+    /* Style for vertical pagination thumbnails */
+    /* Style for vertical pagination */
+    /* Vertical alignment */
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper {
+    width: 100%;
+    height: 300px;
+    /* Adjust as needed */
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages {
+    height: 80px;
+    /* Adjust height for thumbnails */
+    overflow: hidden;
+    /* Hide overflow if needed */
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages .swiper-slide {
+    width: 80px;
+    /* Width of the thumbnail */
+    height: auto;
+  }
+  html body.products-template-default .single-product-page .product-detail .singlePostImages .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper-container {
+    display: flex;
+    flex-direction: column;
+  }
+  html body.products-template-default .single-product-page .product-detail .swiper-container-vertical {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  html body.products-template-default .single-product-page .product-detail .product-category {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  html body.products-template-default .single-product-page .product-detail .product-category .highlight {
+    background-color: #ffeb3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}

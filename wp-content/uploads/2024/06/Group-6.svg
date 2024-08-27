@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="482" viewBox="0 0 1440 482" fill="none">
+  <mask id="path-1-inside-1_34_211" fill="white">
+    <path d="M0 1H1440V482H0V1Z"></path>
+  </mask>
+  <path d="M0 2H1440V0H0V2ZM1440 481H0V483H1440V481Z" fill="#D1D3D8" fill-opacity="0.51" mask="url(#path-1-inside-1_34_211)"></path>
+  <line x1="79.5" y1="482" x2="79.5" y2="1" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="1440" y1="151.5" y2="151.5" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="1440" y1="332.75" x2="0.000976562" y2="332.75" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="262.5" y1="482" x2="262.5" y2="1" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="445.5" y1="481" x2="445.5" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="628.5" y1="482" x2="628.5" y2="1" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="811.5" y1="481" x2="811.5" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="994.5" y1="481" x2="994.5" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="1177.5" y1="481" x2="1177.5" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+  <line x1="1360.5" y1="481" x2="1360.5" stroke="#D1D3D8" stroke-opacity="0.51"></line>
+</svg>
